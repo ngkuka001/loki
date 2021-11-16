@@ -30,9 +30,12 @@
 }
 
 :root {
-  --primaryColor: #FF0000;
+  /* --primaryColor: #FF0000;
   --primaryBoldColor: #af0202;
-  --primaryBlackColor: #9b0101;
+  --primaryBlackColor: #9b0101; */
+  --primaryColor:  #005b96;
+  --primaryBoldColor: #014b7c;
+  --primaryBlackColor: #02385c;
   --secondaryColor: #ffffff;
   --opaqueBackground: #000000e6;
   --mainCanvasBackground: #141414;
@@ -148,7 +151,7 @@ canvas {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #005b96;
   animation: loaderStarted 3s ease forwards;
 }
 
@@ -1049,7 +1052,7 @@ iframe {
 CMC APPLICATION FORM
 Coin/token name: PixelZilla/PZILLA
 Bsc: https://bscscan.com/token/0x0A0476D642d3123D1B427154791d09cEc43Db542?a=0x29550fF6687A0A3febEDDeFc554D70f2f5eF6627
-Symbol: PZILLA
+Symbol: SHIM
 Contract address: 0x0A0476D642d3123D1B427154791d09cEc43Db542
 Reddit: https://www.reddit.com/r/PixelZilla/
 Twitter: https://twitter.com/PixelZillaToken
