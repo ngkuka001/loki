@@ -35,7 +35,8 @@
       .swiper {
         /* width: 80%; */
         height: 100%;
-        background: #232323;
+        background-image: url("./resources/images/character/BG.png");
+        /* background: #232323; */
       }
 
       .swiper-slide {
@@ -60,10 +61,10 @@
 
       .swiper-slide img {
         display: block;
-        width: 80%;
+        width: 70%;
         height: auto;
         object-fit: cover;
-        filter: brightness(135%) saturate(100%);
+        filter: brightness(120%);
       }
 
       .character-wrapper {
@@ -86,10 +87,24 @@
       .swiper-slide-next .character-header {
         display: flex !important;
       }
+
+      .swiper-slide.swiper-slide-next img {
+        width: 80%;
+      }
+
       .progress {
         width: 180px;
         height: 14px;
         background-color: #0e6fb8;
+      }
+      .progress-2 {
+        width: 100px;
+      }
+      .progress-3 {
+        width: 150px;
+      }
+      .progress-4 {
+        width: 50px;
       }
       .character-attr {
         display: flex;
@@ -138,16 +153,34 @@
 
     <!-- <div class="swiper-slide">
       <div class="character-wrapper">
-          <div class="character-header">
-            <div class="character-name uppercase">${character.name}</div>
-            <div class="uppercase character-attr">
-              <div class="character-attr-name"><div class="attr-name">health</div> <div class="progress"><div class="progress-inner"></div></div></div>
+        <div class="character-header">
+          <div class="character-name uppercase">${character.name}</div>
+          <div class="uppercase character-attr">
+            <div class="character-attr-name">
+              <div class="attr-name">health</div>
+              <div class="progress progress-1"><div class="progress-inner"></div></div>
             </div>
-            <div class="uppercase character-attr"><div class="character-attr-name"><div class="attr-name">attack</div> <div class="progress"><div class="progress-inner"></div></div></div></div>
-            <div class="uppercase character-attr"><div class="character-attr-name"><div class="attr-name">defence</div> <div class="progress"><div class="progress-inner"></div></div></div></div>
-            <div class="uppercase character-attr"><div class="character-attr-name"><div class="attr-name">dynamic</div> <div class="progress"><div class="progress-inner"></div></div></div></div>
           </div>
-          <img src=${character.image} />
+          <div class="uppercase character-attr">
+            <div class="character-attr-name">
+              <div class="attr-name">attack</div>
+              <div class="progress progress-2"><div class="progress-inner"></div></div>
+            </div>
+          </div>
+          <div class="uppercase character-attr">
+            <div class="character-attr-name">
+              <div class="attr-name">defence</div>
+              <div class="progress progress-3"><div class="progress-inner"></div></div>
+            </div>
+          </div>
+          <div class="uppercase character-attr">
+            <div class="character-attr-name">
+              <div class="attr-name">dynamic</div>
+              <div class="progress progress-4"><div class="progress-inner"></div></div>
+            </div>
+          </div>
+        </div>
+        <img src="${character.image}" />
       </div>
     </div> -->
 

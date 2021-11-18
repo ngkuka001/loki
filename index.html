@@ -26,14 +26,16 @@
 <link type="text/css" rel="stylesheet" href="styles/main.css" />
 <link type="text/css" rel="stylesheet" href="styles/slider.css" />
 <link type="text/css" rel="stylesheet" href="styles/components.css" />
+<link type="text/css" rel="stylesheet" href="styles/character.css" />
 <link rel="icon" type="image/png" href="resources/images/favicon.ico" />
 <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./character.js"></script>
 </head>
 <body>
 
@@ -208,11 +210,11 @@
 </div>
 <!-- Start -->
 <div class="content-section section--hidden content-section--left-align" data-page="3">
-<div class="content-holder--left-align">
+<!-- <div class="content-holder--left-align">
 <h1 class="content-section__title">MEET THE PZILLAMON METAVERSE</h1>
 <p class="content-section__text text-indent content-section__text-team">WE WILL LAUNCH PZILLAMON SERIES NFT AND OUR OWN NFT MARKETPLACE TO BUILD PZILLA METAVERSE. HATCH EGGS, FIGHT WITH MONSTERS AND BREED LEGENDARY TIERS</p>
-</div>
-<div class="content-section__images">
+</div> -->
+<!-- <div class="content-section__images">
 <div class="content-section__image-holder">
 <img class="content-section__image" src="resources/images/group/sail-lin--removebg-preview.png" alt="Team photo" />
 </div>
@@ -222,7 +224,13 @@
 <div class="content-section__image-holder">
 <img class="content-section__image" src="resources/images/group/sail-lin-2-0-removebg-preview.png" alt="Team photo" />
 </div>
+</div> -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
+
 </div>
 <!-- End -->
 <div class="content-section section--hidden" data-page="4">
@@ -250,7 +258,7 @@
 <p class="content-portfolio__name4 ">50K+ FOLLOWERS ON TWITTER</p>
 </div>
 </div>
-<img style="width: 100%;z-index: -100; position: absolute;" src="resources/images/4.png"></img>
+<img style="width: 100%;z-index: -100; position: absolute;" src="resources/images/spaceship.png"></img>
 </div>
 <div class="content-section section--hidden" data-page="5">
 <h1 class="content-section__title">CONTACT US</h1>
@@ -299,6 +307,8 @@
     }, 1000);
     </script>
 <script type="module" src="main.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

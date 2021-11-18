@@ -142,6 +142,13 @@ export default class UI {
         section.classList.remove("section--hidden");
       }
       if (+section.dataset.page === constructorCb().getCurrentPage()) {
+        console.log(constructorCb().getCurrentPage());
+        const currentPage = constructorCb().getCurrentPage();
+        if (currentPage === 3) {
+          uiWrapper.classList.add("character-background");
+        } else {
+          uiWrapper.classList.remove("character-background");
+        }
         section.style.display = "flex";
         const removeClass = () =>
           section.classList.remove(
