@@ -39,11 +39,12 @@
 .card .card-content h2 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 2.5em;
   line-height: 1em;
+  font: 900 2.5em Atures, sans-serif;
 }
 .card .card-content p {
   color: #fff;
+  font: 100 1em Atures, sans-serif;
 }
 .card .card-content a {
   position: relative;

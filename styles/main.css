@@ -29,6 +29,32 @@
   src: url(../resources/fonts/Roboto-Black.ttf);
 }
 
+@font-face {
+  font-family: Atures;
+  font-weight: 100;
+  src: url(../resources/fonts/atures/Atures-100.ttf);
+}
+@font-face {
+  font-family: Atures;
+  font-weight: 300;
+  src: url(../resources/fonts/atures/Atures-300.ttf);
+}
+@font-face {
+  font-family: Atures;
+  font-weight: 500;
+  src: url(../resources/fonts/atures/Atures-500.ttf);
+}
+@font-face {
+  font-family: Atures;
+  font-weight: 700;
+  src: url(../resources/fonts/atures/Atures-700.ttf);
+}
+@font-face {
+  font-family: Atures;
+  font-weight: 900;
+  src: url(../resources/fonts/atures/Atures-900.ttf);
+}
+
 :root {
   /* --primaryColor: #FF0000;
   --primaryBoldColor: #af0202;
@@ -62,7 +88,7 @@ ul {
 
 li {
   color: var(--secondaryColor);
-  font: 600 15px Roboto, sans-serif;
+  font: 600 15px Atures, sans-serif;
   text-align: left;
 }
 li::before {
@@ -137,7 +163,7 @@ canvas {
 }
 
 .loader__text {
-  font: 900 11vw Roboto, sans-serif;
+  font: 900 11vw Atures, sans-serif;
   position: relative;
   letter-spacing: 20px;
   color: var(--primaryColor);
@@ -183,7 +209,7 @@ canvas {
 .menu-list__item {
   color: var(--secondaryColor);
   position: relative;
-  font: 900 120px Roboto, sans-serif;
+  font: 900 120px Atures, sans-serif;
   letter-spacing: var(--letterSpacing);
   cursor: pointer;
   padding-left: 30px;
@@ -260,7 +286,7 @@ canvas {
   opacity: 0;
   transform: translateY(50px);
   color: var(--secondaryColor);
-  font: 800 40px Roboto, sans-serif;
+  font: 800 40px Atures, sans-serif;
   margin-bottom: 0;
 }
 
@@ -269,7 +295,7 @@ canvas {
   margin: 0;
   letter-spacing: 1px;
   opacity: 0;
-  font: 500 18px Roboto, sans-serif;
+  font: 500 18px Atures, sans-serif;
   margin-bottom: 30px;
 }
 
@@ -300,7 +326,7 @@ canvas {
 
 .popup__offer-title {
   color: var(--secondaryColor);
-  font: 500 30px Roboto, sans-serif;
+  font: 500 30px Atures, sans-serif;
 }
 
 .popup--animated .popup__offers {
@@ -341,7 +367,7 @@ iframe {
 
 .fixed-content-header__logo {
   color: var(--secondaryColor);
-  font: 900 35px Roboto, sans-serif;
+  font: 900 35px Atures, sans-serif;
   letter-spacing: 20px;
   user-select: none;
   margin-left: 30px;
@@ -435,7 +461,7 @@ iframe {
 }
 
 .configuration__letters-text {
-  font: 900 37px Roboto, sans-serif;
+  font: 900 37px Atures, sans-serif;
   position: relative;
   letter-spacing: 10px;
   color: var(--primaryColor);
@@ -467,7 +493,7 @@ iframe {
   display: inline-block;
   margin-right: 10px;
   color: var(--secondaryColor);
-  font: 600 var(--primaryTextSize) Roboto, sans-serif;
+  font: 600 var(--primaryTextSize) Atures, sans-serif;
   animation: scrollLetterDrops 4s linear forwards infinite;
 }
 .scroll-letters__letter::after {
@@ -510,7 +536,7 @@ iframe {
 
 .fixed-content-footer__copy {
   color: var(--secondaryColor);
-  font: 600 var(--primaryTextSize) Roboto, sans-serif;
+  font: 600 var(--primaryTextSize) Atures, sans-serif;
 }
 
 /***** MAIN CONTENT SECTIONS *****/
@@ -595,7 +621,7 @@ iframe {
 .content-section__title {
   position: relative;
   color: var(--secondaryColor);
-  font: 800 40px Roboto, sans-serif;
+  font: 800 40px Atures, sans-serif;
   transform: translate3d(0, 0, 0);
   transition: var(--contentTransitionDuration) 300ms var(--contentTransitionBezier);
 }
@@ -603,7 +629,7 @@ iframe {
 .content-section__text {
   width: 70%;
   color: var(--secondaryColor);
-  font: 600 20px Roboto, sans-serif;
+  font: 600 20px Atures, sans-serif;
   margin-bottom: 50px;
   transform: translate3d(0, 0, 0);
   transition: var(--contentTransitionDuration) 500ms var(--contentTransitionBezier);
@@ -712,7 +738,7 @@ iframe {
 
 .content-service__text {
   color: var(--secondaryColor);
-  font: 800 20px Roboto, sans-serif;
+  font: 800 20px Atures, sans-serif;
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -815,7 +841,7 @@ iframe {
 }
 
 .content-portfolio__name {
-  font: 600 20px Roboto, sans-serif;
+  font: 600 20px Atures, sans-serif;
   position: absolute;
   bottom: 0;
   left: 25px;
@@ -826,7 +852,7 @@ iframe {
   white-space: nowrap;
 }
 .content-portfolio__name1 {
-  font: 600 20px Roboto, sans-serif;
+  font: 600 20px Atures, sans-serif;
   position: absolute;
   bottom: 0;
   left: 50px;
@@ -837,7 +863,7 @@ iframe {
   white-space: nowrap;
 }
 .content-portfolio__name2 {
-  font: 600 20px Roboto, sans-serif;
+  font: 600 20px Atures, sans-serif;
   position: absolute;
   bottom: 0;
   left: 75px;
@@ -848,7 +874,7 @@ iframe {
   white-space: nowrap;
 }
 .content-portfolio__name3 {
-  font: 600 20px Roboto, sans-serif;
+  font: 600 20px Atures, sans-serif;
   position: absolute;
   bottom: 0;
   left: 100px;
@@ -859,7 +885,7 @@ iframe {
   white-space: nowrap;
 }
 .content-portfolio__name4 {
-  font: 600 20px Roboto, sans-serif;
+  font: 600 20px Atures, sans-serif;
   position: absolute;
   bottom: 0;
   left: 125px;
@@ -884,7 +910,7 @@ iframe {
 
 @media only screen and (max-width: 1200px) {
   .menu-list__item {
-    font: 900 9vw Roboto, sans-serif;
+    font: 900 9vw Atures, sans-serif;
   }
 
   .content-section__image-holder {

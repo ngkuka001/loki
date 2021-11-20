@@ -60,7 +60,13 @@ main.ui-wrapper.character-background {
   display: none;
   align-self: flex-start;
   padding-left: 30px;
+  font: 500 16px Atures, sans-serif;
 }
+
+.character-header .character-name {
+  font: 900 16px Atures, sans-serif;
+}
+
 .swiper-slide-next .character-header {
   display: flex !important;
 }
