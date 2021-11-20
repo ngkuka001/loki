@@ -500,6 +500,9 @@ iframe {
 .scroll-letters__letter:nth-of-type(6) {
   animation-delay: 600ms;
 }
+.scroll-letters__letter:nth-of-type(7) {
+  animation-delay: 700ms;
+}
 
 @keyframes scrollLetterDrops {
   25%, 100% { transform: translate3d(0, 100%, 0); }
@@ -1055,7 +1058,7 @@ Bsc: https://bscscan.com/token/0x0A0476D642d3123D1B427154791d09cEc43Db542?a=0x2
 Symbol: SHIM
 Contract address: 0x0A0476D642d3123D1B427154791d09cEc43Db542
 Reddit: https://www.reddit.com/r/PixelZilla/
-Twitter: https://twitter.com/PixelZillaToken
+Twitter: https://twitter.com/flom_shibameta
 Facebook:  /
 Github: /
 Website: https://pixelzilla.io/

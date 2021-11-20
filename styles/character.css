@@ -1,18 +1,3 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  /* background: #eee; */
-  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper {
   /* width: 80%; */
   height: 100%;
@@ -20,9 +5,9 @@ body {
   /* background: #232323; */
 }
 
-main.ui-wrapper {
+/* main.ui-wrapper {
   background-image: url("../resources/images/background-img.png");
-}
+} */
 
 main.ui-wrapper.character-background {
   background-image: url("../resources/images/character/BG.png");
@@ -74,7 +59,7 @@ main.ui-wrapper.character-background {
   padding-left: 12px;
   display: none;
   align-self: flex-start;
-  padding-left: 55px;
+  padding-left: 30px;
 }
 .swiper-slide-next .character-header {
   display: flex !important;
@@ -84,20 +69,15 @@ main.ui-wrapper.character-background {
   width: 90%;
 }
 
-.progress {
-  width: 180px;
+.progress-attr {
+  width: 220px;
+}
+
+.progress-attr .progress-attr-inner {
+  background: #0e6fb8;
   height: 14px;
-  background-color: #0e6fb8;
 }
-.progress-2 {
-  width: 100px;
-}
-.progress-3 {
-  width: 150px;
-}
-.progress-4 {
-  width: 50px;
-}
+
 .character-attr {
   display: flex;
   align-items: center;
@@ -140,4 +120,42 @@ main.ui-wrapper.character-background {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+
+.sub-ui-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/images/background-img.png");
+  opacity: 0.35;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .character-header {
+    display: flex !important;
+  }
+  .swiper-slide img {
+    width: 60%;
+  }
+  .character-header {
+    padding-left: 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .swiper-slide.swiper-slide-next img {
+    width: 80%;
+  }
+  .character-header {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1368px) {
+  .content {
+    width: 80%;
+  }
 }
