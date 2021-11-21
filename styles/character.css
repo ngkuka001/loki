@@ -1,9 +1,6 @@
 .swiper {
-  /* width: 80%; */
+  width: 100%;
   height: auto;
-
-  /* background-image: url("../resources/images/character/BG.png"); */
-  /* background: #232323; */
 }
 
 .swiper-wrapper {
@@ -64,7 +61,7 @@ main.ui-wrapper.character-background {
   padding-left: 12px;
   display: none;
   align-self: flex-start;
-  padding-left: 30px;
+  padding-left: 35px;
   font: 500 16px Atures, sans-serif;
 }
 
@@ -154,14 +151,19 @@ main.ui-wrapper.character-background {
   .character-header {
     padding-left: 20%;
   }
+
+  /* layout */
+  .content {
+    height: 80%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .swiper-slide.swiper-slide-next img {
-    width: 80%;
+    width: 60%;
   }
   .character-header {
-    padding-left: 40px;
+    padding-left: 87px;
   }
 }
 
@@ -169,4 +171,20 @@ main.ui-wrapper.character-background {
   .content {
     width: 80%;
   }
+}
+
+.character-header-wrapper {
+  text-align: center;
+}
+
+.character-header-wrapper .character-title {
+  font: 800 40px Atures, sans-serif;
+  color: white;
+}
+
+.character-header-wrapper .character-desc {
+  font: 500 16px Atures, sans-serif;
+  color: white;
+  margin: 0;
+  margin-bottom: 16px;
 }
