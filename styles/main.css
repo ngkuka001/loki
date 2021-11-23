@@ -654,21 +654,21 @@ iframe {
   left: 0;
   transition: 300ms ease;
 }
-.content-section__buttons-holder .content-section__button:first-of-type:hover {
+/* .content-section__buttons-holder .content-section__button:first-of-type:hover {
   padding-right: 100px;
   left: -10px;
   transition: 300ms ease;
-}
+} */
 .content-section__buttons-holder
   .content-section__button:first-of-type:hover
   .button__invisible-email {
   display: block;
 }
-.content-section__buttons-holder
+/* .content-section__buttons-holder
   .content-section__button:first-of-type:hover
   .button__text {
   display: none;
-}
+} */
 
 .button__invisible-email {
   display: none;
