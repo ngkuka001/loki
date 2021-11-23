@@ -170,13 +170,9 @@ function loadMainLetters() {
       "position",
       new THREE.Float32BufferAttribute(vertices, 3)
     );
-    const pointSprite = new THREE.TextureLoader().load(
-      "resources/images/icons/pointImg.png"
-    );
     const pointsMaterial = new THREE.PointsMaterial({
       color: configuration.colors.DotsColor,
       size: 0.5,
-      map: pointSprite,
       transparent: true,
       alphaTest: 0.5,
     });

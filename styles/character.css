@@ -188,3 +188,13 @@ main.ui-wrapper.character-background {
   margin: 0;
   margin-bottom: 16px;
 }
+
+.certificate-image {
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .certificate-image {
+    width: 100%;
+  }
+}

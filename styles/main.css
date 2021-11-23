@@ -59,7 +59,7 @@
   /* --primaryColor: #FF0000;
   --primaryBoldColor: #af0202;
   --primaryBlackColor: #9b0101; */
-  --primaryColor:  #005b96;
+  --primaryColor: #005b96;
   --primaryBoldColor: #014b7c;
   --primaryBlackColor: #02385c;
   --secondaryColor: #ffffff;
@@ -70,7 +70,7 @@
   --letterSpacing: 5px;
   --radius: 4px;
   --contentTransitionDuration: 600ms;
-  --contentTransitionBezier: cubic-bezier(.83,.39,.21,.96);
+  --contentTransitionBezier: cubic-bezier(0.83, 0.39, 0.21, 0.96);
 }
 
 * {
@@ -94,7 +94,7 @@ li {
 li::before {
   content: "•";
   color: var(--primaryColor);
-  display: inline-block; 
+  display: inline-block;
   width: 15px;
   margin-left: -1em;
 }
@@ -109,7 +109,7 @@ body {
 }
 
 canvas {
-	display: block;
+  display: block;
 }
 
 .ui-wrapper {
@@ -171,7 +171,7 @@ canvas {
 }
 
 .loader__text::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -182,11 +182,19 @@ canvas {
 }
 
 @keyframes loaderStarted {
-  to { width: 0%; }
+  to {
+    width: 0%;
+  }
 }
 @keyframes loaderFinished {
-  50% { background-color: transparent; }
-  100% { opacity: 0; visibility: hidden; pointer-events: none; }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 /***** MAIN MENU *****/
@@ -222,7 +230,7 @@ canvas {
   left: 0;
   width: 0;
   height: 100%;
-  content: '';
+  content: "";
   background-color: var(--primaryBoldColor);
   z-index: -1;
   transition: width 400ms ease;
@@ -302,14 +310,15 @@ canvas {
 .popup--animated .popup__title {
   transform: translateY(0);
   opacity: 1;
-  transition: var(--contentTransitionDuration) 400ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 400ms
+    var(--contentTransitionBezier);
 }
 .popup--animated .popup__subtitle {
   transform: translateY(0);
   opacity: 0.5;
-  transition: var(--contentTransitionDuration) 600ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 600ms
+    var(--contentTransitionBezier);
 }
-
 
 /** POPUP SUBSECTIONS START**/
 /* WHAT WE OFFER */
@@ -332,7 +341,8 @@ canvas {
 .popup--animated .popup__offers {
   transform: translateY(0);
   opacity: 1;
-  transition: var(--contentTransitionDuration) 300ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 300ms
+    var(--contentTransitionBezier);
 }
 
 /* VIDEO */
@@ -467,19 +477,13 @@ iframe {
   color: var(--primaryColor);
   user-select: none;
   text-shadow: 1px 1px 1px var(--primaryBoldColor),
-  1px 2px 1px var(--primaryBoldColor),
-  1px 3px 1px var(--primaryBoldColor),
-  1px 4px 1px var(--primaryBoldColor),
-  1px 5px 1px var(--primaryBoldColor),
-  1px 6px 1px var(--primaryBoldColor),
-  1px 7px 1px var(--primaryBoldColor),
-  1px 8px 1px var(--primaryBoldColor),
-  1px 9px 1px var(--primaryBoldColor),
-  1px 10px 1px var(--primaryBoldColor),
-  1px 18px 6px rgba(16,16,16,0.4),
-  1px 22px 10px rgba(16,16,16,0.2),
-  1px 25px 35px rgba(16,16,16,0.2),
-  1px 30px 60px rgba(16,16,16,0.4);
+    1px 2px 1px var(--primaryBoldColor), 1px 3px 1px var(--primaryBoldColor),
+    1px 4px 1px var(--primaryBoldColor), 1px 5px 1px var(--primaryBoldColor),
+    1px 6px 1px var(--primaryBoldColor), 1px 7px 1px var(--primaryBoldColor),
+    1px 8px 1px var(--primaryBoldColor), 1px 9px 1px var(--primaryBoldColor),
+    1px 10px 1px var(--primaryBoldColor), 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .scroll-letters {
@@ -531,7 +535,10 @@ iframe {
 }
 
 @keyframes scrollLetterDrops {
-  25%, 100% { transform: translate3d(0, 100%, 0); }
+  25%,
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
 }
 
 .fixed-content-footer__copy {
@@ -609,7 +616,6 @@ iframe {
   transform: rotate(-70deg);
 }
 
-
 .content-section--left-align {
   flex-direction: row;
 }
@@ -623,7 +629,8 @@ iframe {
   color: var(--secondaryColor);
   font: 800 40px Atures, sans-serif;
   transform: translate3d(0, 0, 0);
-  transition: var(--contentTransitionDuration) 300ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 300ms
+    var(--contentTransitionBezier);
 }
 
 .content-section__text {
@@ -632,13 +639,15 @@ iframe {
   font: 600 20px Atures, sans-serif;
   margin-bottom: 50px;
   transform: translate3d(0, 0, 0);
-  transition: var(--contentTransitionDuration) 500ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 500ms
+    var(--contentTransitionBezier);
 }
 
 .content-section__buttons-holder {
   display: flex;
   transform: translate3d(0, 0, 0);
-  transition: var(--contentTransitionDuration) 700ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 700ms
+    var(--contentTransitionBezier);
 }
 .content-section__buttons-holder .content-section__button:first-of-type {
   margin-right: 20px;
@@ -650,10 +659,14 @@ iframe {
   left: -10px;
   transition: 300ms ease;
 }
-.content-section__buttons-holder .content-section__button:first-of-type:hover .button__invisible-email {
+.content-section__buttons-holder
+  .content-section__button:first-of-type:hover
+  .button__invisible-email {
   display: block;
 }
-.content-section__buttons-holder .content-section__button:first-of-type:hover .button__text {
+.content-section__buttons-holder
+  .content-section__button:first-of-type:hover
+  .button__text {
   display: none;
 }
 
@@ -664,7 +677,8 @@ iframe {
 
 .content-section__button {
   transform: translate3d(0, 0, 0);
-  transition: var(--contentTransitionDuration) 700ms var(--contentTransitionBezier);
+  transition: var(--contentTransitionDuration) 700ms
+    var(--contentTransitionBezier);
 }
 
 /* Content services section */
@@ -689,7 +703,7 @@ iframe {
   will-change: transform;
 }
 .content-services__service::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   background-color: var(--primaryBlackColor);
@@ -896,11 +910,15 @@ iframe {
   white-space: nowrap;
 }
 .content-portfolio__image-holder::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(90deg, var(--opaqueBackground) 0%, rgba(255,0,0,0) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--opaqueBackground) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -941,7 +959,7 @@ iframe {
     padding-bottom: 5%;
   }
   .popup__inner::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 10px;
     left: calc(50% - 20px);
@@ -956,7 +974,7 @@ iframe {
     width: 90%;
   }
   .content-portfolio__images {
-    flex-direction: column;  
+    flex-direction: column;
   }
   .fixed-content-paging {
     display: none;
@@ -1051,15 +1069,20 @@ iframe {
     flex-basis: 50%;
   }
 
-  .content-section__buttons-holder .content-section__button:first-of-type:hover {
+  .content-section__buttons-holder
+    .content-section__button:first-of-type:hover {
     padding-right: 25px;
     left: 0;
     transition: 300ms ease;
   }
-  .content-section__buttons-holder .content-section__button:first-of-type:hover .button__invisible-email {
+  .content-section__buttons-holder
+    .content-section__button:first-of-type:hover
+    .button__invisible-email {
     display: none;
   }
-  .content-section__buttons-holder .content-section__button:first-of-type:hover .button__text {
+  .content-section__buttons-holder
+    .content-section__button:first-of-type:hover
+    .button__text {
     display: block;
   }
 }
@@ -1068,7 +1091,6 @@ iframe {
 @media only screen and (max-height: 450px) {
   .content-services,
   .content-section__images,
-
   .content-holder--left-align {
     flex-basis: 100%;
   }
@@ -1077,24 +1099,3 @@ iframe {
     margin-bottom: 17px;
   }
 }
-
-CMC APPLICATION FORM
-Coin/token name: PixelZilla/PZILLA
-Bsc: https://bscscan.com/token/0x0A0476D642d3123D1B427154791d09cEc43Db542?a=0x29550fF6687A0A3febEDDeFc554D70f2f5eF6627
-Symbol: SHIM
-Contract address: 0x0A0476D642d3123D1B427154791d09cEc43Db542
-Reddit: https://www.reddit.com/r/PixelZilla/
-Twitter: https://twitter.com/flom_shibameta
-Facebook:  /
-Github: /
-Website: https://pixelzilla.io/
-Country of origin: 
-Total supply: 100,000,000,000
-Max supply: 100,000,000,000
-Telegram: https://t.me/PixelZillaTokenDiscord: https://discord.gg/6QNFA6Up
-Logo link 200x200 transparent background: https://raw.githubusercontent.com/PixelZillaOfficial/images/main/logo200.png
-Brief Description about token, should be appealing: 
-PixelZilla is a metaverse project develop by the pixel team, include PZILLAMON series nft and PZILLA NFT marketplace, All purchases in our game and platform will be built on $PIZZLA tokens.
-The goal? To serve our community and investors, ensuring a fun and engaging environment alongside continuous marketing efforts.
-
-Exchange (s)  trading link:https://pancakeswap.finance/swap?outputCurrency=0x0A0476D642d3123D1B427154791d09cEc43Db542
