@@ -147,9 +147,9 @@ $(document).ready(function () {
     </div>
   </div>`
   );
-  $(".swiper-wrapper").append(elements);
+  $(".characterSwiper .swiper-wrapper").append(elements);
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".characterSwiper", {
     slidesPerView: 1,
     loop: true,
     navigation: {

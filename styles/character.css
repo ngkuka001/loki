@@ -197,4 +197,7 @@
   .certificate-image {
     width: 100%;
   }
+  .character-header-wrapper .character-title {
+    font-size: 30px;
+  }
 }

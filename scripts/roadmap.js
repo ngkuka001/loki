@@ -43,7 +43,28 @@ $(document).ready(function () {
   ];
 
   const elements = roadmapData.map(
-    (roadmap, index) => `<div class="roadmap-box">
+    (roadmap, index) => `    <div class="roadmap-box">
+    <span></span>
+    <div class="roadmap-content">
+      <h2>${roadmap.title}</h2>
+      <ul>
+      <li>${roadmap.content[0]}</li>
+      <li>${roadmap.content[1]}</li>
+      <li>${roadmap.content[2]}</li>
+      <li>${roadmap.content[3]}</li>
+      <li>${roadmap.content[4]}</li>
+      <li>${roadmap.content[5]}</li>
+      <li>${roadmap.content[6]}</li>
+      <li>${roadmap.content[7]}</li>
+      ${index === 2 ? `<li>${roadmap.content[8]}</li>` : ""}
+      </ul>
+    </div>
+    </div>`
+  );
+
+  const elementsSwiper = roadmapData.map(
+    (roadmap, index) => `<div class="swiper-slide">
+    <div class="roadmap-box">
   <span></span>
   <div class="roadmap-content">
     <h2>${roadmap.title}</h2>
@@ -59,7 +80,29 @@ $(document).ready(function () {
     ${index === 2 ? `<li>${roadmap.content[8]}</li>` : ""}
     </ul>
   </div>
-  </div>`
+  </div>
+    </div>`
   );
-  $(".roadmap-wrapper").append(elements);
+
+  $(".roadmap-desktop").append(elements);
+
+  $(".roadmapSwiper .swiper-wrapper").append(elementsSwiper);
+
+  var swiper = new Swiper(".roadmapSwiper", {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // autoplay: {
+    //   delay: 1500,
+    //   disableOnInteraction: false,
+    // },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
