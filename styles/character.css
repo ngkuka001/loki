@@ -11,12 +11,12 @@
   background-image: url("../resources/images/background-img.png");
 } */
 
-main.ui-wrapper.character-background {
+/* main.ui-wrapper.character-background {
   background-image: url("../resources/images/character/BG.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .swiper-slide {
   text-align: center;

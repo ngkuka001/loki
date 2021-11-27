@@ -217,7 +217,7 @@ canvas {
 .menu-list__item {
   color: var(--secondaryColor);
   position: relative;
-  font: 900 120px Atures, sans-serif;
+  font: 900 86px Atures, sans-serif;
   letter-spacing: var(--letterSpacing);
   cursor: pointer;
   padding-left: 30px;
@@ -532,6 +532,9 @@ iframe {
 }
 .scroll-letters__letter:nth-of-type(7) {
   animation-delay: 700ms;
+}
+.scroll-letters__letter:nth-of-type(8) {
+  animation-delay: 800ms;
 }
 
 @keyframes scrollLetterDrops {

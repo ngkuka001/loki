@@ -143,7 +143,7 @@ $(document).ready(function () {
           </div>
         </div>
       </div>
-      <img src="${character.image}" />
+      <img src="${character.image}" loading="auto"/>
     </div>
   </div>`
   );
