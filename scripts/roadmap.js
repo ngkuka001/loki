@@ -56,7 +56,7 @@ $(document).ready(function () {
     <li>${roadmap.content[5]}</li>
     <li>${roadmap.content[6]}</li>
     <li>${roadmap.content[7]}</li>
-    ${index === 2 ? `<li>${roadmap.content[8]}</li>` : null}
+    ${index === 2 ? `<li>${roadmap.content[8]}</li>` : ""}
     </ul>
   </div>
   </div>`
