@@ -148,4 +148,35 @@
   .burger__line:nth-of-type(3) {
     display: none;
   }
+
+  .btn-wrapper {
+    bottom: 32px !important;
+  }
+  .img-logo {
+    width: 200px !important;
+    margin: unset;
+    bottom: 85px;
+  }
+}
+
+.btn-wrapper {
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn-wrapper .btn-primary {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #8f54ba, #005b96);
+  color: var(--secondaryColor);
+  letter-spacing: var(--letterSpacing);
+  font: 700 var(--primaryTextSize) Atures, sans-serif;
+  border-radius: var(--radius);
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.btn-wrapper .btn-primary:hover {
+  filter: brightness(1.3);
 }
